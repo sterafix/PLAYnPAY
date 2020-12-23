@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PLAYnPAY</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="buttonNeuesSpiel">Neues Spiel</string>
+    <string name="editTextName">Bitte Namen eingeben</string>
+    <string name="title_activity_spiel">SpielActivity</string>
+    <string name="textViewSpiel">Neues Spiel</string>
+    <string name="buttonSichtbarMachen">sichtbar machen</string>
+    <string name="buttonSpielerSuchen">Spieler suchen</string>
+    <string name="title_activity_spieler_suchen">SpielerSuchenActivity</string>
+    <string name="textViewInfo">Suche startet</string>
+    <string name="checkBoxSpieler">Spieler</string>
+    <string name="checkBoxBank">Bank</string>
+    <string name="textViewPruefung">Pruefung</string>
+    <string name="textViewWaerung">€</string>
+    <string name="textViewSendenAbbuchen">senden/abbuchen</string>
+    <string name="textViewAnVon">an/von</string>
+    <string name="buttonSenden">Senden</string>
+    <string name="buttonAbbuchen">Abbuchen</string>
+    <string name="sucheLaeuft">Suche läuft</string>
+    <string name="sucheBeendet">Suche beendet</string>
+    <string name="pruefungSpieler">Spieler</string>
+    <string name="pruefungBank">Bank</string>
+    <string name="pruefungSpielerUndBank">Bank und Spieler</string>
+    <string name="title_activity_auswahl">AuswahlActivity</string>
+    <string name="title_activity_vorbereitung">VorbereitungActivity</string>
+    <string name="buttonBank">Bank</string>
+    <string name="buttonSpieler">Spieler</string>
+    <string name="buttonStart">Start</string>
+    <string name="buttonSpielStarten">Spiel starten</string>
+</resources>

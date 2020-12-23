@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jonas.facharbeit.SpielActivity"
+    tools:showIn="@layout/activity_spiel">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textViewPruefung"
+        android:id="@+id/textViewPruefung"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="5000"
+        android:id="@+id/textViewKonto"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/textViewPruefung"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textViewSendenAbbuchen"
+        android:id="@+id/textViewSendenAbbuchen"
+        android:layout_below="@+id/textViewKonto"
+        android:layout_marginTop="29dp"
+        android:layout_toLeftOf="@+id/editTextBetrag"
+        android:layout_toStartOf="@+id/editTextBetrag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textViewAnVon"
+        android:id="@+id/textViewAnVon"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/textViewSendenAbbuchen"
+        android:layout_alignRight="@+id/buttonSenden"
+        android:layout_alignEnd="@+id/buttonSenden" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextBetrag"
+        android:layout_alignBottom="@+id/textViewSendenAbbuchen"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textViewKonto"
+        android:layout_toEndOf="@+id/textViewKonto" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerMitspieler"
+        android:layout_alignBottom="@+id/textViewAnVon"
+        android:layout_toRightOf="@+id/textViewSendenAbbuchen"
+        android:layout_toEndOf="@+id/textViewSendenAbbuchen"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSenden"
+        android:id="@+id/buttonSenden"
+        android:onClick="senden"
+        android:layout_below="@+id/spinnerMitspieler"
+        android:layout_toLeftOf="@+id/textViewKonto"
+        android:layout_toStartOf="@+id/textViewKonto"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonAbbuchen"
+        android:id="@+id/buttonAbbuchen"
+        android:onClick="abbuchen"
+        android:layout_alignBaseline="@+id/buttonSenden"
+        android:layout_alignBottom="@+id/buttonSenden"
+        android:layout_toRightOf="@+id/textViewKonto"
+        android:layout_toEndOf="@+id/textViewKonto" />
+
+</RelativeLayout>

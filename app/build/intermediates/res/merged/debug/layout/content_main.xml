@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.example.jonas.facharbeit.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSichtbarMachen"
+        android:id="@+id/buttonSichtbarMachen"
+        android:onClick="sichtbarMachen"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSpielerSuchen"
+        android:id="@+id/buttonSpielerSuchen"
+        android:onClick="spielerSuchen"
+        android:layout_below="@+id/buttonSichtbarMachen"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonNeuesSpiel"
+        android:id="@+id/buttonNeuesSpiel"
+        android:onClick="neuesSpielStarten"
+        android:layout_below="@+id/buttonSpielerSuchen"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBoxSpieler"
+        android:id="@+id/checkBoxSpieler"
+        android:onClick="spielerAusgewaehlt"
+        android:layout_below="@+id/buttonNeuesSpiel"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBoxBank"
+        android:id="@+id/checkBoxBank"
+        android:onClick="bankAusgewaehlt"
+        android:layout_below="@+id/checkBoxSpieler"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonStart"
+        android:id="@+id/buttonStart"
+        android:onClick="auswahl"
+        android:layout_below="@+id/checkBoxBank"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
